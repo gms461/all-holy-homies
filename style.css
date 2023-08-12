@@ -54,10 +54,6 @@ body {
   color: var(--text-color1);
 }
 
-#page-wrapper {
-  position: relative;
-}
-
 .container {
   max-width: 1000px;
   width: 100%;
@@ -102,6 +98,7 @@ section {
 .italic {
   text-align: center;
   font-style: italic;
+  font-size: 1.5rem;
 }
 
 /* HEADER & NAVBAR STYLING */
