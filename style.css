@@ -215,8 +215,8 @@ nav li {
   #nav-bar li {
     display: none;
   }
-  #nav-bar input:checked ~ #nav-bar li {
-      display: block;
+  #hamburger:checked ~ #nav-bar li {
+    display: block;
   }
 }
 
