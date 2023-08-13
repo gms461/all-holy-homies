@@ -101,6 +101,10 @@ section {
   font-size: 1.5rem;
 }
 
+strong {
+  color: var(--accent-color2);
+}
+
 /* HEADER & NAVBAR STYLING */
 header {
   position: fixed;
@@ -191,6 +195,27 @@ nav li {
 .nav-link:hover {
   font-weight: bold;
   text-decoration: none;
+}
+
+#nav-bar label, #hamburger { 
+  display: none; 
+}
+
+@media (max-width: 650px) {
+  #nav-bar label {
+    display: inline-block;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+  .ham-menu {
+    display: none;
+  }
+  #nav-bar input:checked {
+    .ham-menu {
+      display: block;
+    }
+  }
 }
 
 /* HERO STYLING */
