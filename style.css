@@ -197,6 +197,10 @@ nav li {
   text-decoration: none;
 }
 
+label[for="hamburger"] {
+  font-size: 4rem;
+}
+
 #nav-bar label, #hamburger { 
   display: none; 
 }
@@ -211,10 +215,8 @@ nav li {
   .ham-menu {
     display: none;
   }
-  #nav-bar input:checked {
-    .ham-menu {
+  #nav-bar input:checked ~ .ham-menu {
       display: block;
-    }
   }
 }
 
