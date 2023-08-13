@@ -197,16 +197,16 @@ nav li {
   text-decoration: none;
 }
 
-label[for="hamburger"] {
+#ham-label {
   font-size: 4rem;
 }
 
-#nav-bar label, #hamburger { 
+#ham-label, #hamburger { 
   display: none; 
 }
 
 @media (max-width: 650px) {
-  #nav-bar label {
+  #ham-label {
     display: inline-block;
     font-style: normal;
     font-size: 1.2em;
