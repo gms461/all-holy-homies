@@ -212,10 +212,10 @@ label[for="hamburger"] {
     font-size: 1.2em;
     padding: 10px;
   }
-  .ham-menu {
+  #nav-bar li {
     display: none;
   }
-  #nav-bar input:checked ~ .ham-menu {
+  #nav-bar input:checked ~ #nav-bar li {
       display: block;
   }
 }
