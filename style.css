@@ -292,6 +292,12 @@ nav li {
   margin: 0 5rem;
 }
 
+@media (max-width: 650px) {
+  .contact-item:nth-of-type(2) {
+    margin: 0 2.5rem;
+  }
+}
+
 .contact-item i {
   font-weight: bold;
 }
