@@ -7,6 +7,48 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico">
         <title>All Holy Homies</title>
+        <script>
+            // Open the Modal
+            function openModal() {
+              document.getElementById("myModal").style.display = "block";
+            }
+            
+            // Close the Modal
+            function closeModal() {
+              document.getElementById("myModal").style.display = "none";
+            }
+            
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            // Next/previous controls
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            // Thumbnail image controls
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("demo");
+              var captionText = document.getElementById("caption");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+              captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+            </script>
     </head>
     <body>
         <!--PAGE HEADER-->
@@ -55,8 +97,71 @@
             <!--GALLERY-->
             <section id="Gallery">
                 <h2 class="section-heading">Gallery</h2>
-                <p>Here are some examples of our work.</p>
-                <!--TODO: PUT LIGHTBOX GALLERY HERE-->
+                <p>Here are some examples of our work.</p><br/>
+                <!-- Images used to open the lightbox -->
+                <div class="row">
+                    <div class="column">
+                    <img src="./images/StMaryofEgypt-thumb.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                    </div>
+                    <div class="column">
+                    <img src="./images/cross-thumb.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                    </div>
+                    <div class="column">
+                    <img src="./images/StMichael-thumb.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                    </div>
+                    <div class="column">
+                    <img src="./images/StMaryofEgypt2-thumb.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                    </div>
+                </div>
+                <!-- The Modal/Lightbox -->
+                <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+                
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 4</div>
+                            <img src="./images/StMaryofEgypt-full.jpg">
+                        </div>
+                    
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 4</div>
+                            <img src="./images/cross-full.jpeg">
+                        </div>
+                    
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 4</div>
+                            <img src="./images/StMichael-full.jpeg">
+                        </div>
+                    
+                        <div class="mySlides">
+                            <div class="numbertext">4 / 4</div>
+                            <img src="./images/StMaryofEgypt2-full.jpg">
+                        </div>
+                        <!-- Next/previous controls -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <!-- Caption text -->
+                        <div class="caption-container">
+                            <p id="caption"></p>
+                        </div>
+                        <!-- Thumbnail image controls -->
+                        <div class="column">
+                            <img class="demo" src="./images/StMaryofEgypt-thumb.png" onclick="currentSlide(1)" alt="St. Mary of Egypt - custom design">
+                        </div>
+                    
+                        <div class="column">
+                            <img class="demo" src="./images/cross-thumb.png" onclick="currentSlide(2)" alt="Holy cross - custom design">
+                        </div>
+                    
+                        <div class="column">
+                            <img class="demo" src="./images/StMichael-thumb.png" onclick="currentSlide(3)" alt="St. Michael the Archangel - custom design">
+                        </div>
+                    
+                        <div class="column">
+                            <img class="demo" src="./images/StMaryofEgypt2-thumb.png" onclick="currentSlide(4)" alt="St. Mary of Egypt - custom design">
+                        </div>
+                    </div>
+                </div>
             </section>
             <!--FAQS-->
             <section id="FAQs">
