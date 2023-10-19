@@ -287,12 +287,13 @@ nav li {
   margin: auto;
   padding: 0;
   width: 90%;
-  max-width: 100vw;
+  max-width: 1200px;
 }
 .modal-content img {
   display: block;
   margin: auto;
   height: 80vh;
+  width: 100vw;
 }
 
 /* The Close Button */
