@@ -131,10 +131,6 @@ header {
   header {
     flex-wrap: wrap;
   }
-  #homelink {
-    text-align: left;
-    vertical-align: center;
-  }
 }
 
 .logo {
@@ -246,11 +242,6 @@ nav li {
   margin-bottom: 80px;
 }
 
-#hero > h1 {
-  margin-bottom: 20px;
-  word-wrap: break-word;
-}
-
 #hero img {
   max-height: 300px;
   max-width: 100%;
@@ -259,7 +250,7 @@ nav li {
 
 @media (max-width: 650px) {
   #hero {
-    margin-top: 180px;
+    margin-top: 160px;
   }
 }
 
