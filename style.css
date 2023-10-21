@@ -139,7 +139,7 @@ header {
 
 @media (max-width: 650px) {
   #homelink {
-    margin-top: 15px;
+    margin-top: 20px;
     width: 100%;
     position: relative;
   }
