@@ -72,7 +72,6 @@ h1, h2, h3 {
 
 h1 {
   font-size: 6rem;
-  font-family: "Pacifico", serif;
   color: var(--accent-color2);
 }
 
@@ -239,8 +238,8 @@ nav li {
   justify-content: center;
   text-align: center;
   height: 200px;
-  margin-top: 180px;
-  margin-bottom: 120px;
+  margin-top: 160px;
+  margin-bottom: 80px;
 }
 
 #hero > h1 {
