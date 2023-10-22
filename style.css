@@ -265,7 +265,7 @@ nav li {
   clear: both;
 }
 
-/* Create four equal columns that floats next to eachother */
+/* Create six equal columns that floats next to eachother */
 .column {
   float: left;
   width: 16%;
